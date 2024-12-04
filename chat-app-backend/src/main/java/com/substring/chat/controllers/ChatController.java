@@ -33,7 +33,6 @@ public class ChatController {
             @RequestBody MessageRequest request
     ) {
 
-
         Room room = roomRepository.findByRoomId(request.getRoomId());
         Message message = new Message();
         message.setContent(request.getContent());
